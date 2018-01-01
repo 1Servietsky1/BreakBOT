@@ -1,0 +1,27 @@
+1. Récupérer les données des bougies de l'API (Open price, High price, Low price, Closing price)
+
+2. Sauvegarder les bougies dans la base de données "Bougies"
+
+3. Récupération de données pour calcul de l'EMA 10 et l'EMA 21
+  - Get closing price de la base de données "Bougies"
+  - Get last EMA 10 de la base de données "EMA 10" (voir .5)
+  - Get last EMA 21 de la base de données "EMA 21" (voir .5)
+  
+4. Calcul de l'EMA 10 et EMA 21 future
+  - Formule : (Closing price * %age de variation) + (Last EMA(n) * (1 - %age de variation))
+  
+    %age de variation = 2 / (n + 1)
+    n = 10 ou 21
+
+5. Sauvegarder les EMA 10 et EMA 21 dans les bases de données respectives
+
+6. Calcul du threshold (penser à le stocker dans une base de donnée pour backtest)
+  -Formule : (100 * (EMA 10 - EMA 21)) / ((EMA 10 + EMA 21) / 2)
+
+7. Controller
+  Paramètres du threshold :   up = 0.15
+                              down = -0.006
+                              
+  Si EMA 10 > EMA 21 et threshold > 0.15 : achète
+  Si EMA 10 < EMA 21 et theshold < -0.006 : vend
+  Si non : rien
