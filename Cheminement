@@ -1,3 +1,6 @@
+---------------------------------------------------------------------------------------------------------
+                                           BASE DE DONNEES
+---------------------------------------------------------------------------------------------------------
 1. Récupérer les données des bougies de l'API Bitfinex (Open price, High price, Low price, Closing price)
 
 2. Sauvegarder les bougies dans la base de données "Bougies"
@@ -15,6 +18,10 @@
 
 5. Sauvegarder les EMA 10 et EMA 21 dans les bases de données respectives
 
+
+---------------------------------------------------------------------------------------------------------
+                                                BOT
+---------------------------------------------------------------------------------------------------------
 6. Calcul du threshold (penser à le stocker dans une base de donnée pour backtest)
   -Formule : (100 * (EMA 10 - EMA 21)) / ((EMA 10 + EMA 21) / 2)
 
