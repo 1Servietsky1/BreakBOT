@@ -3,10 +3,10 @@
 ---------------------------------------------------------------------------------------------------------
 1. Récupérer les données des bougies de l'API Bitfinex (Open price, High price, Low price, Closing price)
 
-2. Sauvegarder les bougies dans la base de données "Bougies"
+2. Sauvegarder les bougies dans la base de données "Candles"
 
 3. Récupération de données pour calcul de l'EMA 10 et l'EMA 21
-  - Get closing price de la base de données "Bougies"
+  - Get closing price de la base de données "Candles"
   - Get last EMA 10 de la base de données "EMA 10" (voir .5)
   - Get last EMA 21 de la base de données "EMA 21" (voir .5)
   
