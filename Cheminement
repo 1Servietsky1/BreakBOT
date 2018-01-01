@@ -1,4 +1,4 @@
-1. Récupérer les données des bougies de l'API (Open price, High price, Low price, Closing price)
+1. Récupérer les données des bougies de l'API Bitfinex (Open price, High price, Low price, Closing price)
 
 2. Sauvegarder les bougies dans la base de données "Bougies"
 
