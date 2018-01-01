@@ -25,5 +25,3 @@
   Si EMA 10 > EMA 21 et threshold > 0.15 : achète
   Si EMA 10 < EMA 21 et theshold < -0.006 : vend
   Si non : rien
-
-8.
