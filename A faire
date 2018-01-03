@@ -1,6 +1,13 @@
 //-------------
 A faire
 //-------------
+1- factoriser bot pour décliner en plusieurs monnaies
+2- mettre le bot à jours pour que chaque monnaie ne rejoues que ses gains (créer BDD pour chaque monnaie qui enregistre l'achat la vente...)
+3- backtest
+4- comparer plateformes de trading
+5- faire interface graphique
+
+
 
 *Créer notre propre API pour pouvoir faire des backtest (sur 6mois), voir si possiblité de récupérer 6 mois de data sur d'autre api
 *Ajouter EMA1 et tester
